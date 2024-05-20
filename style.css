@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(47, 88%, 63%);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#card {
+  width: 350px;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 7%);
+  border-radius: 15px;
+  border: 0.75px solid black;
+  margin: 80px 0;
+  padding: 20px;
+  box-shadow: 8px 8px 0 black;
+}
+
+#img-container {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+#word-container {
+  background-color: hsl(47, 88%, 63%);
+  width: 80px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 800;
+  margin: 15px 0;
+  padding: 2px 4px;
+}
+
+#description {
+  margin-bottom: 20px;
+}
+
+#description #date-para {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#description h2 {
+  font-weight: 800;
+  margin: 18px 0;
+}
+
+#description h2 a {
+  font-size: 21px;
+  text-decoration: none;
+  color: black;
+}
+
+#description #description-para {
+  color: hsl(0, 0%, 50%);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#profile-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+#profile-container img {
+  height: 30px;
+  width: 30px;
+  margin-right: 15px;
+}
+
+#profile-container p {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+#description h2 a:hover,
+a:active {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+#card:hover,
+#card:active {
+  box-shadow: 14px 14px 0 black;
+  transition: 0.4s ease-in-out;
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 375px) {
+  #card {
+    max-width: 325px;
+  }
+}
